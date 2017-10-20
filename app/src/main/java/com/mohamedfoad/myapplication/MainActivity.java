@@ -1,5 +1,6 @@
 package com.mohamedfoad.myapplication;
 
+import android.content.Intent;
 import android.os.CountDownTimer;
 import android.renderscript.Sampler;
 import android.support.v7.app.AppCompatActivity;
@@ -45,5 +46,11 @@ public class MainActivity extends AppCompatActivity {
             }
         }.start();
 
+    }
+
+    public void openPomodoro(View view){
+
+        Intent i = new Intent(MainActivity.this, pomodoroActivity.class);
+        startActivity(i);
     }
 }
