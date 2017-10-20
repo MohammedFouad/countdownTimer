@@ -7,19 +7,29 @@
     android:orientation="vertical"
     tools:context="com.mohamedfoad.myapplication.pomodoroActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
     <com.github.lzyzsd.circleprogress.DonutProgress
-        android:layout_marginLeft="50dp"
         android:id="@+id/donut_progress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        custom:donut_progress="25"/>
+        android:layout_marginLeft="50dp"
+        custom:donut_finished_color="#CFD8DC"
+        custom:donut_progress="25"
+        custom:donut_show_text="false"
+        custom:donut_unfinished_color="#64DD17" />
+
     <TextView
+        android:id="@+id/textCountdown"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textCountdown"
-        android:hint="timer"
-        android:gravity="center_horizontal"/>
-
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:hint="timer" />
+    </RelativeLayout>
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
